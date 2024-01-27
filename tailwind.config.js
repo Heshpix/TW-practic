@@ -24,7 +24,7 @@ module.exports = {
 
       },
   backgroundImage:{
-    p1:'url(/**/img/icons/h1bg.jpg);'
+    p1:'url(/img/icons/h1bg.jpg);',
   },
 
 },
