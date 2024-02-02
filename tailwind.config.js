@@ -26,6 +26,9 @@ module.exports = {
   backgroundImage:{
     p1:'url(/img/icons/h1bg.jpg);',
   },
+  fontSize:{
+  xl1:'21px',
+  }
 
 },
   plugins: [],
