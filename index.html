@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,16 +9,33 @@
 </head>
 <body>
   <main class="bg-gray10 w-full h-full text-white flex justify-center items-center flex-col">
-    <header class="flex justify-between w-full items-center bg-gray10 h-[7rem] px-3 py-5 ">
+    <header class="flex justify-between desktop:justify-center w-full items-center bg-gray10 h-[7rem] px-3 py-5">
       <div class="flex justify-center items-center">
         <picture> <img src="img/mobile/logoM.svg" alt="logoM"></picture>
         <p class="ml-2">SquareUP</p>
       </div>
-      <div class="flex items-center justify-center w-[46px] rounded-md bg-gray15 h-[3rem]">
+
+      <div class="flex flex-nowrap desktop:px-[20%] laptop:text-xl desktop:text-2xl max-phone:hidden">
+        <a class="px-2" href="#">home</a>
+        <a class="px-2" href="#">Services</a>
+        <a class="px-2" href="#">Work</a>
+        <a class="px-2" href="#">About</a>
+        <a class="px-2" href="#">Careers</a>
+        <a class="px-2" href="#">Process</a>
+      </div>
+
+    <div>
+      <div class="min-w-[6.5rem] bg-green60 px-5 py-2 rounded-md flex items-center text-gray15 max-phone:hidden"><a
+        href="#"></a>Contact Us</div>
+    </div>
+
+    <div class="flex m-0 p-0 items-center">
+      <div class="flex items-center justify-center w-[46px] rounded-md bg-gray15 h-[3rem] phone:hidden">
         <picture><img src="img/icons/burger.svg" alt="burger"></picture>
       </div>
+    </div>
     </header>
-    <section class=" bg-p1 pt-[30px] flex flex-col justify-center items-center px-4">
+    <section class=" bg-p1 pt-[30px] flex flex-col justify-center items-center w-full px-4">
       <div>
         <div>
           <h1 class="text-4xl text-center mb-[2rem] mt-5">A Digital Product Studio
@@ -35,14 +53,14 @@
         </div>
         <div class="min-w-[6.5rem] bg-green60 px-5 py-4 rounded-md flex items-center text-gray15"><a
             href="#"></a>Contact Us</div>
-      </div class="mb-[12rem]">
+      </div>
       <div
         class="flex items-center justify-center bg-gray10 border rounded-full border-gray15 py-2 w-[17rem] h-[3rem] -mb-[2rem] px-3">
         <p class="text-green90 text-center ">Trusted By 250+ Companies</p>
       </div>
     </section>
-    <section class="flex justify-center py-3 bg-gray15 bg-opacity-20 ">
-      <div class="flex flex-col">
+    <section class="flex justify-center w-full py-3 bg-gray15 bg-opacity-20 ">
+      <div class="flex justify-center  max-phone:flex-col">
         <div class="flex flex-row justify-between">
           <div class="flex justify-between py-[2rem] px-[3rem]">
             <picture class=""> <img src="img/places/zapier.svg" alt="zapier"></picture>
@@ -70,13 +88,14 @@
           </div>
         </div>
     </section>
-    <section class="bg-gray10">
-      <div class="flex justify-center items-center w-full flex-wrap bg-p1 bg-no-repeat bg-cover pb-4">
+    <section class="bg-gray10 w-full">
+      <div class="flex justify-center flex-col items-center w-full h-[15rem] flex-wrap bg-p1 bg-no-repeat bg-cover pb-4">
         <h2 class="text-4xl my-7"> Our Services</h2>
         <p class="text-center px-5">Transform your brand with our innovative digital solutions that captivate
           and engage your audience.</p>
       </div>
-      <div class="flex justify-start items-center m-8 flex-wrap">
+      <div class="flex ipad:flex-row flex-wrap justify-start w-full phone:flex-col phone:justify-center">
+      <div class="flex justify-start items-center m-8 flex-wrap w-cont">
         <picture>
           <img src="img/icons/design.svg" alt="design">
         </picture>
@@ -89,7 +108,7 @@
           <a href="#" class="text-white w-full">Learn More</a>
         </div>
       </div>
-      <div class="flex justify-start items-center m-8 flex-wrap">
+      <div class="flex justify-start items-center m-8 flex-wrap w-cont">
         <picture>
           <img src="img/icons/Engireenirg.svg" alt="Engineering">
         </picture>
@@ -101,7 +120,7 @@
           <a href="#" class="text-white w-full">Learn More</a>
         </div>
       </div>
-      <div class="flex justify-start items-center m-8 flex-wrap">
+      <div class="flex justify-start items-center m-8 flex-wrap w-cont">
         <picture>
           <img src="img/icons/ProjectM.svg" alt="ProjectM">
         </picture>
@@ -113,14 +132,16 @@
           <a href="#" class="text-white w-full">Learn More</a>
         </div>
       </div>
+    </div>
     </section>
-    <section class="bg-gray10">
-      <div class="flex justify-center items-center w-full flex-wrap bg-p1 bg-no-repeat bg-cover pb-4">
+    <section class="bg-gray10 w-full">
+      <div class="flex justify-center items-center w-full h-[20rem] flex-col flex-wrap bg-p1 bg-no-repeat bg-cover pb-4 ">
         <h2 class="text-4xl my-7 text-center">Why Choose SquareUp?</h2>
         <p class="text-center px-5">Experience excellence in digital craftsmanship with our team of skilled
           professionals dedicated to delivering exceptional results.</p>
       </div>
-      <div class="flex justify-start items-center m-8 flex-wrap">
+    <div class="flex justify-center my-5 flex-wrap ipad:flex-row flex-col">
+      <div class="flex justify-start items-center flex-wrap w-cont2 h-auto px-2">
         <picture>
           <img src="img/icons/Exertise.svg" alt="Exertise">
         </picture>
@@ -129,7 +150,7 @@
           landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge
           solutions.</p>
       </div>
-      <div class="flex justify-start items-center m-8 flex-wrap">
+      <div class="flex justify-start items-center flex-wrap w-cont2 h-auto px-2">
         <picture>
           <img src="img/icons/ClientApproach.svg" alt="ClientApproach">
         </picture>
@@ -137,7 +158,7 @@
         <p class="m-3">We prioritize our clients and their unique needs. We listen to your ideas, challenges, and
           goals, and tailor our services to meet your specific requirements. Your success is our success.</p>
       </div>
-      <div class="flex justify-start items-center m-8 flex-wrap">
+      <div class="flex justify-start items-center flex-wrap w-cont2 h-auto px-2">
         <picture>
           <img src="img/icons/results.svg" alt="results">
         </picture>
@@ -146,7 +167,7 @@
           create digital products that drive business growth, enhance user experiences, and provide a competitive
           advantage.</p>
       </div>
-      <div class="flex justify-start items-center m-8 flex-wrap">
+      <div class="flex justify-start items-center flex-wrap w-cont2 h-auto px-2">
         <picture>
           <img src="img/icons/colab.svg" alt="colab">
         </picture>
@@ -154,15 +175,17 @@
         <p class="m-3">We value long-term relationships with our clients. We see ourselves as your digital partner,
           providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive.</p>
       </div>
+    </div>
     </section>
-    <section id="123" class="bg-gray10 flex justify-center items-center flex-col">
-      <div class="flex justify-center items-center w-full flex-col bg-p1 bg-no-repeat bg-cover pb-4">
+    <section id="123" class="bg-gray10 flex justify-center items-center flex-col w-full">
+      <div class="flex justify-center items-center flex-col h-[20rem] bg-p1 bg-no-repeat bg-cover pb-4">
         <h2 class="text-4xl my-7 text-center">What our Clients say About us</h2>
-        <p class="text-center px-4">At SquareUp, we take pride in delivering exceptional digital products and services
+        <p class="text-center px-4 ipad:w-[60%]">At SquareUp, we take pride in delivering exceptional digital products and services
           that drive success for our clients. Here's what some of our satisfied clients have to say about their
           experience working with us</p>
       </div>
-      <div class="flex justify-start items-center my-4 mx-8 flex-wrap">
+      <div class="flex ipad:flex-row flex-wrap justify-center w-full phone:flex-col ihone:justify-center">
+      <div class="flex justify-start items-center m-4 flex-wrap w-cont2">
         <div class="pt-10 text-start">
           <h3 class="text-green80 text-2xl">SquareUp has been Instrumental in Transforming our Online Presence. </h3>
           <p class="mt-5 text-gray90">Their team's expertise in web development and design resulted in a visually
@@ -177,7 +200,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-start items-center my-4 mx-8 flex-wrap">
+      <div class="flex justify-start items-center m-4 flex-wrap w-cont2">
         <div class="pt-10 text-start">
           <h3 class="text-green80 text-2xl">Working with SquareUp was a breeze.</h3>
           <p class="mt-5 text-gray90">They understood our vision for a mobile app that streamlined our food delivery
@@ -192,7 +215,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-start items-center my-4 mx-8 flex-wrap">
+      <div class="flex justify-start items-center m-4 flex-wrap w-cont2">
         <div class="pt-10 text-start">
           <h3 class="text-green80 text-2xl">SquareUp developed a comprehensive booking and reservation system for our
             event management company</h3>
@@ -208,7 +231,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-start items-center my-4 mx-8 flex-wrap">
+      <div class="flex justify-start items-center m-4 flex-wrap w-cont2">
         <div class="pt-10 text-start">
           <h3 class="text-green80 text-2xl">ProTech Solutions turned to SquareUp to automate our workflow</h3>
           <p class="mt-5 text-gray90">They delivered an exceptional custom software solution. The system has
@@ -223,14 +246,16 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
-    <section>
-      <div class="flex justify-center flex-col items-center bg-p1 bg-no-repeat bg-cover pb-4">
+    <section class="w-full">
+      <div class="flex justify-center flex-col items-center bg-p1 bg-no-repeat bg-cover h-[15rem] pb-4">
         <h2 class="text-4xl my-7 text-center">Frequently Asked Questions</h2>
         <p class="text-center px-4">Still you have any questions? Contact our Team via hello@squareup.com</p>
       </div>
+      <div class="flex flex-col justify-center w-full bg-gray15 border rounded-md border-gray35">
       <div class="flex flex-col bg-gray15 py-9 px-6">
-        <div class="flex justify-center items-center">
+        <div class="flex items-center">
           <picture class="mr-4"><img src="img/icons/01.svg" alt="01"></picture>
           <h5 class="text-[16px] text-green70">What services does SquareUp provide?</h5>
           <button class="text-4xl hover:text-green70 active:rotate-45">+</button>
@@ -244,29 +269,30 @@
         </div>
       </div>
       <div class="flex flex-col bg-gray15 py-9 px-6">
-        <div class="flex justify-center items-center">
+        <div class="flex items-center">
           <picture class="mr-4"><img src="img/icons/02.svg" alt="02"></picture>
           <h5 class="text-[16px]">How can SquareUp help my business?</h5>
           <button class="text-4xl hover:text-green70 active:rotate-45">+</button>
         </div>
       </div>
       <div class="flex flex-col bg-gray15 py-9 px-6">
-        <div class="flex justify-center items-center">
+        <div class="flex items-center">
           <picture class="mr-4"><img src="img/icons/03.svg" alt="03"></picture>
           <h5 class="text-[16px]">What industries does SquareUp work with?</h5>
           <button class="text-4xl hover:text-green70 active:rotate-45">+</button>
         </div>
       </div>
       <div class="flex flex-col bg-gray15 py-9 px-6">
-        <div class="flex justify-center items-center">
+        <div class="flex items-center">
           <picture class="mr-4"><img src="img/icons/04.svg" alt="04"></picture>
           <h5 class="text-[16px]">How long does it take to complete a project?</h5>
           <button class="text-4xl hover:text-green70 active:rotate-45">+</button>
         </div>
       </div>
+      </div>
     </section>
-    <section>
-      <div class="flex flex-col justify-center bg-p1 p-4">
+    <section class="w-full">
+      <div class="flex flex-col justify-center w-full bg-p1 p-4">
         <picture class="flex justify-center mt-12 mx-[9.5rem] mb-7 "><img src="img/icons/Logotype.svg " alt="logo">
         </picture>
         <div class="flex justify-center ">
@@ -283,93 +309,107 @@
             Project</a>
         </div>
       </div>
-      <div class="flex justify-center w-full p-6 flex-col">
-        <div class="w-[23rem] h-28 bg-gray15 flex justify-center border border-gray15 rounded-md my-4">
+      <div class="flex justify-center w-full pl-3 flex-col max-phone:w-[60%] ">
+      <div class="flex justify-center flex-row max-ipad:flex-col">
+        <div class="w-[22rem] h-28 bg-gray15 flex justify-center border border-gray15 rounded-md my-4 ipad:mx-4 ">
           <div class="px-6 flex justify-center flex-col w-full">
             <p>Full name</p>
             <input class="bg-gray15 underline mt-4 " type="text" name="full_name" placeholder="Type here">
           </div>
         </div>
-        <div class="w-[23rem] h-28 bg-gray15 flex justify-center border border-gray15 rounded-md my-4">
+        <div class="w-[22rem] h-28 bg-gray15 flex justify-center border border-gray15 rounded-md my-4">
           <div class="px-6 flex justify-center flex-col w-full">
             <p>Email</p>
             <input class="bg-gray15 underline mt-4 " type="text" name="E-mail" placeholder="Type here">
           </div>
         </div>
-
-        <div class="w-[23rem] h-auto py-5 bg-gray15 flex justify-center border border-gray15 rounded-md my-4">
+      </div>
+      <div class="flex justify-center flex-row max-ipad:flex-col">
+        <div class="max-ipad:w-[22rem] h-auto py-5 bg-gray15 flex justify-center border border-gray15 rounded-md my-4 ipad:w-[45rem] ipad:ml-4 max-phone:flex-row">
           <div class="px-6 flex justify-center flex-col w-full h-auto">
             <h6>Why are you contacting us?</h6>
             <div class="flex items-center mt-4">
-              <input class="bg-gray15 w-7 h-7" type="checkbox" name="check-mark" id="check-mark">
-              <label for="check-mark" class="pl-5">Web Design</label>
+              <input id="WebDesign" class="bg-gray15 w-7 h-7" type="checkbox" name="check-mark" id="check-mark">
+              <label for="WebDesign" class="pl-5">Web Design</label>
             </div>
             <div class="flex items-center mt-4">
-              <input class="bg-gray15 w-7 h-7" type="checkbox" name="check-mark" id="check-mark">
-              <label for="check-mark" class="pl-5">Collaboration</label>
+              <input id="Collaboration" class="bg-gray15 w-7 h-7" type="checkbox" name="check-mark" id="check-mark">
+              <label for="Collaboration" class="pl-5">Collaboration</label>
             </div>
             <div class="flex items-center mt-4">
-              <input class="bg-gray15 w-7 h-7" type="checkbox" name="check-mark" id="check-mark">
-              <label for="check-mark" class="pl-5">Mobile App Design</label>
+              <input id="MobileDesign" class="bg-gray15 w-7 h-7" type="checkbox" name="check-mark" id="check-mark">
+              <label for="MobileDesign" class="pl-5">Mobile App Design</label>
             </div>
             <div class="flex items-center mt-4">
-              <input class="bg-gray15 w-7 h-7" type="checkbox" name="check-mark" id="check-mark">
-              <label for="check-mark" class="pl-5">Others</label>
+              <input id="Others" class="bg-gray15 w-7 h-7" type="checkbox" name="check-mark" id="check-mark">
+              <label for="Others" class="pl-5">Others</label>
             </div>
           </div>
         </div>
-        <div class="w-[23rem] h-28 bg-gray15 flex justify-center border border-gray15 rounded-md my-4">
+      </div>
+        <div class="flex justify-center flex-row max-ipad:flex-col">
+        <div class="w-[22rem] h-28 bg-gray15 flex justify-center border border-gray15 rounded-md my-4 ipad:mx-4 ">
           <div class="px-6 flex justify-center flex-col w-full">
             <p>Your Budget</p>
             <input class="bg-gray15 underline mt-4 " type="text" name="Budget" placeholder="Type here">
           </div>
         </div>
-        <div class="bg-green50 w-full h-[3rem] text-center items-center pt-[1rem] justify-center rounded-md my-8">
+        <div class="w-[22rem] h-28 bg-gray15 flex justify-center border border-gray15 rounded-md my-4">
+          <div class="px-6 flex justify-center flex-col w-full">
+            <p>Your message</p>
+            <input class="bg-gray15 underline mt-4 " type="text" name="sms" placeholder="Type here">
+          </div>
+        </div>
+        </div>
+      </div>
+        <div class="bg-green50 w-full h-[3rem] text-center items-center pt-[1rem] justify-center rounded-md my-8 laptop:w-[10rem] laptop:mx-[45%]">
           <a href="#" class="text-gray10 w-full">Submit</a>
         </div>
     </section>
 
-   <footer class="px-4 w-full">
-    <div class="flex justify-center items-center">
-    <picture> <img src="img/icons/logo50.svg" alt="logo50"></picture>
-    <p class="text-3xl ml-5">SquareUP</p>
-  </div>
-  <div class="flex flex-wrap justify-center my-8 ">
-    <a class="px-2 text-xl1" href="#">home</a>
-    <a class="px-2 text-xl1" href="#">Services</a>
-    <a class="px-2 text-xl1" href="#">Work</a>
-    <a class="px-2 text-xl1" href="#">Process</a>
-    <a class="px-2 text-xl1" href="#">About</a>
-    <a class="px-2 text-xl1" href="#">Careers</a>
-    <a class="px-2 text-xl1" href="#">Contact</a>
-  </div>
-  <div class="flex flex-col justify-center items-center">
-    <h2 class="text-2xl mx-5" >Stay Connected</h2>
-    <picture class="flex flex-row">
-      <img class="mx-2" src="img/icons/facebook.svg" alt="facebook">
-      <img class="mx-2" src="img/icons/Twitter.svg" alt="Twitter">
-      <img class="mx-2" src="img/icons/LinkedIn.svg" alt="LinkedIn">
-    </picture>
-  </div>
-  <div class="flex flex-col justify-center mt-5">
-    <div class="w[360px] flex justify-center my-5">
-      <picture class="mx-5"><img src="img/icons/mail.svg" alt="mail"></picture>
-      <p>hello@squareup.com</p>
-    </div>
-    <div class="w[360px] flex justify-center my-5">
-      <picture class="mx-5"><img src="img/icons/phone.svg" alt="phone"></picture>
-      <p>+91 91813 23 2309</p>
-    </div>
-    <div class="w[360px] flex justify-center my-5">
-      <picture class="mx-5"><img src="img/icons/mark.svg" alt="mark"></picture>
-      <p>Somewhere in the World</p>
-    </div>
-    <div class="text-gray60 flex justify-center mt-5 bottom-full">
-      © 2023 SquareUp. All rights reserved.
-    </div>
-  </div>
-  <div class="h-96"></div> 
-   </footer>
+    <footer class="px-4 w-full">
+      <div class="flex justify-center items-center">
+        <picture> <img src="img/icons/logo50.svg" alt="logo50"></picture>
+        <p class="text-3xl ml-5">SquareUP</p>
+      </div>
+      <div class="flex flex-wrap justify-center my-8 ">
+        <a class="px-2 text-xl1" href="#">home</a>
+        <a class="px-2 text-xl1" href="#">Services</a>
+        <a class="px-2 text-xl1" href="#">Work</a>
+        <a class="px-2 text-xl1" href="#">Process</a>
+        <a class="px-2 text-xl1" href="#">About</a>
+        <a class="px-2 text-xl1" href="#">Careers</a>
+        <a class="px-2 text-xl1" href="#">Contact</a>
+      </div>
+      <div class="flex flex-col justify-center items-center border border-gray30 rounded-lg py-5 ">
+        <h2 class="text-2xl mx-5">Stay Connected</h2>
+        <picture class="flex flex-row">
+          <img class="mx-2" src="img/icons/facebook.svg" alt="facebook">
+          <img class="mx-2" src="img/icons/Twitter.svg" alt="Twitter">
+          <img class="mx-2" src="img/icons/LinkedIn.svg" alt="LinkedIn">
+        </picture>
+      
+      <div class="flex flex-col justify-center mt-5 laptop:justify-between laptop:flex-row">
+        <div class="w[360px] flex justify-center my-5">
+          <picture class="mx-5"><img src="img/icons/mail.svg" alt="mail"></picture>
+          <p>hello@squareup.com</p>
+        </div>
+        <div class="w[360px] flex justify-center my-5">
+          <picture class="mx-5"><img src="img/icons/phone.svg" alt="phone"></picture>
+          <p>+91 91813 23 2309</p>
+        </div>
+        <div class="w[360px] flex justify-center my-5">
+          <picture class="mx-5"><img src="img/icons/mark.svg" alt="mark"></picture>
+          <p>Somewhere in the World</p>
+        </div>
+      </div>
+        <div class="text-gray60 flex justify-center mt-5 bottom-full">
+          © 2023 SquareUp. All rights reserved.
+        </div>
+      </div>
+      <div class="h-96"></div>
+    </footer>
   </main>
 </body>
+
 </html>

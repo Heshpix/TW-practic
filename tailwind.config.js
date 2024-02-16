@@ -28,7 +28,21 @@ module.exports = {
   },
   fontSize:{
   xl1:'21px',
-  }
+  },
+
+  screens: {
+    'desktbig': '1920px',
+    'desktop': '1366px',
+    'laptop': '1028px',
+    'ipad': '768px',
+    'phone':'450px',
+    'iphone':'400px',
+  },
+
+  width:{
+    cont:'390px',
+    cont2:'360px',
+  },
 
 },
   plugins: [],
